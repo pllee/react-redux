@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "inlineSources": true,
+        "inlineSourceMap": true,
+        "experimentalDecorators": true,
+        "noUnusedLocals": true,
+        "module": "commonjs",
+        "target": "es6",
+        "outDir": "./dev-dist"
+    },
+    "exclude": ["node_modules"]
+}

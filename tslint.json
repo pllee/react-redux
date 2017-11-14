@@ -1,0 +1,47 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "interface-name": [true, "never-prefix"],
+    "no-bitwise": {
+      "severity": "off"
+    },
+    "trailing-comma": {
+      "severity": "off"
+    },
+    "no-trailing-whitespace": {
+      "severity": "off"
+    },
+    "eofline": {
+      "severity": "off"
+    },
+    "member-access": {
+      "severity": "off"
+    },
+    "only-arrow-functions": {
+      "severity": "off"
+    },
+    "max-line-length": {
+      "severity": "off"
+    },
+    "ordered-imports": {
+      "severity": "off"
+    },
+    "quotemark": {
+      "options": [
+        "single",
+        "avoid-escape"
+      ]
+    },
+    "no-empty": {
+      "options": ["allow-empty-catch"]
+    },
+    "object-literal-sort-keys": {
+      "severity": "off"
+    }
+  },
+  "rulesDirectory": []
+}

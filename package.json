@@ -1,0 +1,52 @@
+{
+  "name": "react-redux",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/",
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json",
+    "tsc-dev": "tsc -p tsconfig-dev.json",
+    "tsc-dev-watch": "npm run tsc-dev -- --watch",
+    "tsc-watch": "npm run tsc -- --watch",
+    "test": "jest",
+    "build-for-dist": "npm run tsc && git add dist && git commit -m \"build typescript\" || true ",
+    "pub-internal": "npm run build-for-dist && pub-internal",
+    "tslint": "tslint -c tslint.json 'lib/**/*.ts'",
+    "tslint-fix": "npm run tslint -- --fix",
+    "precommit": "npm run tslint",
+    "prepush": "npm run test"
+  },
+  "types": "./@types",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^21.1.2",
+    "@types/node": "^8.0.33",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "prettier": "^1.7.4",
+    "ts-jest": "^21.1.0",
+    "typescript": "^2.5.3"
+  },
+  "jest": {
+    "mapCoverage": true,
+    "testEnvironment": "node",
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/dist/preprocessor.js"
+    },
+    "testMatch": [
+      "**/*.test.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0"
+  }
+}
